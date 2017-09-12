@@ -1,20 +1,19 @@
 # LaTeX resume template
 
-This is the template I use for my own resume. I've compiled it with elements from several templates, including:
+This is the template I use for my own resume. It was originally a fork of
+[Harshavardhan Gadgil's Data Engineer Resume](opensorceror/Data-Engineer-Resume-LaTeX),
+but I pulled it into a non-forked repository when I added the modified cover
+letter from [Claud D. Park's Awesome CV](https://github.com/posquit0/Awesome-CV).
 
-1. [Carmine Spagnuolo's Twenty Seconds Curriculum Vitae](https://github.com/spagnuolocarmine/TwentySecondsCurriculumVitae-LaTex)
-2. [Carmine Benedetto's Smart Fancy LaTeX CV](https://github.com/neoben/smart-fancy-latex-cv)
-3. [Adrien Friggeri's Fancy CV](https://www.sharelatex.com/templates/52fb8c1f33621a613683ecad)
+## Screenshots
 
-![CV Screenshot](screen.png)
+![Letter Screenshot](letter.png)
 
-## Installing pre-requisites (Windows)
+![Resume Screenshot](screen.png)
 
-1. Install [MiKTeX](https://miktex.org/howto/install-miktex), a TeX distribution for Windows that includes a large number of major packages.
+## Notes
 
-2. Install an editor to edit and compile LaTeX documents. I recommend [TeXstudio](http://www.texstudio.org/) or [Texmaker](http://www.xm1math.net/texmaker/).
-
-Once both the distribution and editor are installed, clone this repository using `git clone` and open the template.tex file in your editor. **Important**: Make sure to compile with XeLaTeX, not PDFLaTeX. You're good to go!
+Needs LuaLaTex or XeLaTex to compile.
 
 ## License
 
@@ -33,4 +32,3 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
-
