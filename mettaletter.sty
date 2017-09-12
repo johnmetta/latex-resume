@@ -1,0 +1,57 @@
+\NeedsTeXFormat{LaTeX2e}
+
+\ProvidesPackage{mettaletter}[2017/09/11 Relatively unchanging cover letter elements]
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{paris_profile}
+\name{John W.}{Metta}
+\position{Software Architect{\enskip\cdotp\enskip}Mathematical Modeler}
+\address{651 Floral Place, Hood River, Or. 97031}
+
+\mobile{(541) 399 1032}
+\email{mail@johnmetta.com}
+\homepage{johnmetta.com}
+\github{johnmetta}
+\linkedin{johnmetta}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@johnmetta}
+% \skype{skype-id}
+% \reddit{reddit-id}
+\extrainfo{\\Marriage Name Change: \textit{Records prior to 2005 in the name John W. Pennington}}
+
+%\quote{``Be the change that you want to see in the world."}
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% How the letter is closed
+\letterclosing{Sincerely,}
+
+%------------------------
+%   LETTER OPENING
+%------------------------
+\newcommand\letterheader{
+    % Print the header with above personal informations
+    % Give optional argument to change alignment(C: center, L: left, R: right)
+    \makecvheader[R]
+    
+    % Print the footer with 3 arguments(<left>, <center>, <right>)
+    % Leave any of these blank if they are not needed
+    \makecvfooter
+      {\today}
+      {John W. \textbf{Metta}~~~·~~~Cover Letter}
+      {}
+    
+    % Print the title with above letter informations
+    \makelettertitle
+}
+
+\endinput

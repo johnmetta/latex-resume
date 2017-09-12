@@ -30,8 +30,8 @@
 
 \RequirePackage[hidelinks]{hyperref}
 \hypersetup{
-    pdftitle={},
-    pdfauthor={},
+    pdftitle={Metta CV},
+    pdfauthor={John Metta},
     pdfsubject={},
     pdfkeywords={},
     colorlinks=false,           % no lik border color
@@ -147,6 +147,7 @@
 \newcommand{\profilepic}[1]{\renewcommand{\profilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\cvname}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\cvjobtitle}{#1}}
+\newcommand{\cvnote}[1]{\renewcommand{\cvnote}{#1}}
 
 % Command for printing the contact information icons
 \newcommand*\icon[1]{\tikz[baseline=(char.base)]{\node[shape=circle,draw,inner sep=1pt, fill=mainblue,mainblue,text=white] (char) {#1};}}
@@ -155,7 +156,7 @@
 \newcommand\programming[1]{ 
 	\renewcommand{\programming}{
 		\begin{tikzpicture}
-        	\node [above right] at (0, 4) {$0 \: LOC \: \arrow{3.2} \: 5000 \: LOC$};
+        	\node [above right] at (0, 4) {$1 \: Year \: \arrow{3.2} \: 10 \: Years$};
 			\foreach [count=\i] \x/\y in {#1}{
 				\draw[fill=maingray,maingray] (0,\i) rectangle (6,\i+0.4);
 				\draw[fill=white,mainblue](0,\i) rectangle (\y,\i+0.4);
@@ -239,27 +240,29 @@
             
     \end{tabular}
 
+  \cvnote
+  
     %------------------------------------------------
-    \vspace{4mm}
+    \vspace{2mm}
     \profilesection{Skills}{4cm}
     
-    {\large \textbf{Overview}}
+    {\large \textbf{Quick Overview}}
 
 	\skills
         
         %------------------------------------------------
         
-        \vspace{3mm}
+        \vspace{2mm}
        
-	 {\large \textbf{Programming}} 
+	 {\large \textbf{Specialty Experience}} 
 
 		 \programming
          
-        \vspace{4mm}
-        \profilesection{Projects}{3cm} 
+        \vspace{3mm}
+        \profilesection{Technologies}{1.6cm} 
         
         \projects
-      
+    
   \end{textblock}
 }
 
@@ -329,7 +332,7 @@
         }\\%
     #2&\parbox[t]{0.83\textwidth}{%
 		\ifblank{#5}{}{#5 \\}
-		#6%
+		#6\vspace{\parsep}%
 	}\\
 }
 
@@ -366,9 +369,9 @@
     % specifies the minimum size of the bubble center node
     bubble center node size = 0.5cm,
     %  specifies the minimum size of the bubbles
-    bubble node size = 0.5cm,
+    bubble node size = 0.4cm,
     % specifies which is the distance among the bubble center node and the other bubbles
-    distance center/other bubbles = 0.3cm,
+    distance center/other bubbles = 0.4cm,
     % sets the distance from the text to the border of the bubble center node
     distance text center bubble = 0.5cm,
     % set center bubble color
